@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 2, 2016 6:30:39 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="sistemastock.model.Distribuidores" table="distribuidores" catalog="sistemastock" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="45" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" />
+        </property>
+        <property name="tlf" type="string">
+            <column name="tlf" length="10" />
+        </property>
+        <set name="productoses" table="productos_has_distribuidores" inverse="false" lazy="true" fetch="select">
+            <key>
+                <column name="distribuidores_id" not-null="true" />
+            </key>
+            <many-to-many entity-name="sistemastock.model.Productos">
+                <column name="productos_id" length="12" not-null="true" />
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 2, 2016 6:30:39 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="sistemastock.model.Ubicaciones" table="ubicaciones" catalog="sistemastock" optimistic-lock="version">
+        <id name="id" type="string">
+            <column name="id" length="8" />
+            <generator class="assigned" />
+        </id>
+        <property name="pasillo" type="string">
+            <column name="pasillo" length="2" />
+        </property>
+        <property name="estante" type="string">
+            <column name="estante" length="2" />
+        </property>
+        <property name="repisa" type="java.lang.Integer">
+            <column name="repisa" />
+        </property>
+        <set name="productoses" table="productos" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ubicaciones_id" length="8" not-null="true" />
+            </key>
+            <one-to-many class="sistemastock.model.Productos" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemastock.controller.MarcasController">
+   <children>
+      <SplitPane dividerPositions="0.43" layoutX="301.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane>
+               <children>
+                  <VBox layoutX="31.0" layoutY="-6.0" prefHeight="370.0" prefWidth="191.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" VBox.vgrow="NEVER">
+                           <children>
+                              <Label alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="Detalles de Marcas:" VBox.vgrow="NEVER">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="17.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </HBox.margin>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                           <children>
+                              <JFXTextField fx:id="tfId" labelFloat="true" promptText="Id:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets bottom="20.0" top="25.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <Label fx:id="lId" textFill="RED" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <JFXTextField fx:id="tfNombre" labelFloat="true" layoutX="45.0" layoutY="36.0" promptText="Marca:" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets bottom="20.0" top="25.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <Label fx:id="lNombre" contentDisplay="RIGHT" textFill="RED" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <cursor>
+                              <Cursor fx:constant="V_RESIZE" />
+                           </cursor>
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints maxHeight="1.7976931348623157E308" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" spacing="5.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <JFXButton fx:id="btNew" layoutX="10.0" layoutY="224.0" text="New">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="btEdit" layoutX="10.0" layoutY="290.0" text="Edit">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="btDelete" layoutX="10.0" layoutY="224.0" text="Delete">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="btSave" layoutX="10.0" layoutY="268.0" text="Save">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="btClear" text="Clear" HBox.hgrow="SOMETIMES">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <VBox layoutX="115.0" layoutY="107.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" VBox.vgrow="NEVER">
+                           <children>
+                              <JFXTextField fx:id="tfBusqueda" promptText="Ingrese Busqueda:" />
+                              <JFXButton fx:id="btBuscar" buttonType="RAISED" defaultButton="true" text="Buscar" HBox.hgrow="NEVER" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <TableView fx:id="tvMarca" VBox.vgrow="ALWAYS">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                              <TableColumn fx:id="tcId" maxWidth="1000.0" minWidth="-1.0" prefWidth="7.0" text="Id" />
+                              <TableColumn fx:id="tcNombre" prefWidth="260.0" text="Nombre" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

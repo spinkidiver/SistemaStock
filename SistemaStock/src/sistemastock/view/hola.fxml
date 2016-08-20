@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemastock.controller.HolaController">
+   <children>
+      <Label layoutX="261.0" layoutY="148.0" text="hola mundo" />
+      <JFXTextField layoutX="93.0" layoutY="67.0" promptText="mierda no te creo" />
+      <Button layoutX="136.0" layoutY="23.0" mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>

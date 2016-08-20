@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemastock.controller.UbicacionesController">
+   <children>
+      <SplitPane dividerPositions="0.43" layoutX="225.0" layoutY="46.0" nodeOrientation="LEFT_TO_RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="131.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" VBox.vgrow="NEVER">
+                           <children>
+                              <Label alignment="CENTER" text="Detalles de Ubicaciones:" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="17.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </HBox.margin>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <GridPane VBox.vgrow="ALWAYS">
+                           <children>
+                              <JFXTextField fx:id="tfId" labelFloat="true" promptText="Id:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="20.0" top="25.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <Label fx:id="lPasillo" textFill="RED" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <JFXTextField fx:id="tfPasillo" labelFloat="true" layoutX="57.0" layoutY="11.0" prefColumnCount="2" promptText="Pasillo:" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="tfEstante" labelFloat="true" layoutX="57.0" layoutY="68.0" prefColumnCount="2" promptText="Estante:" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <Label fx:id="lEstante" textFill="RED" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <JFXTextField fx:id="tfRepisa" labelFloat="true" layoutX="57.0" layoutY="107.0" prefColumnCount="4" promptText="Repisa:" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <Label fx:id="lRepisa" textFill="RED" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label textFill="RED" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.valignment="BOTTOM">
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </GridPane>
+                        <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" spacing="5.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <JFXButton fx:id="btNew" buttonType="RAISED" focusTraversable="false" layoutX="1.0" layoutY="241.0" text="New" />
+                              <JFXButton fx:id="btEdit" buttonType="RAISED" focusTraversable="false" layoutX="56.0" layoutY="241.0" text="Edit" />
+                              <JFXButton fx:id="btDelete" buttonType="RAISED" focusTraversable="false" layoutX="109.0" layoutY="241.0" text="Delete" />
+                              <JFXButton fx:id="btSave" buttonType="RAISED" defaultButton="true" layoutX="160.0" layoutY="241.0" text="Save" />
+                              <JFXButton fx:id="btClear" buttonType="RAISED" cancelButton="true" focusTraversable="false" layoutX="201.0" layoutY="241.0" text="Clear" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <children>
+                  <VBox layoutX="164.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" VBox.vgrow="NEVER">
+                           <children>
+                              <JFXTextField fx:id="tfBusqueda" alignment="BASELINE_LEFT" promptText="Ingresa Busqueda:" />
+                              <JFXButton fx:id="btBuscar" buttonType="RAISED" defaultButton="true" text="Buscar" HBox.hgrow="NEVER" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <TableView fx:id="tvUbicaciones" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" VBox.vgrow="ALWAYS">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                              <TableColumn fx:id="tcId" prefWidth="75.0" text="Id" />
+                              <TableColumn fx:id="tcPasillo" prefWidth="75.0" text="Pasillo" />
+                              <TableColumn fx:id="tcEstante" prefWidth="75.0" text="Estante" />
+                              <TableColumn fx:id="tcRepisa" prefWidth="75.0" text="Repisa" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
